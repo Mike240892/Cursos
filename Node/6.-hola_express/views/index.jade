@@ -1,0 +1,19 @@
+html
+	head
+		title Mi primera página con Express
+	body
+		// Este es un comentario
+		- var arreglo = [1,2,3,4,5];
+		- var band = false;
+		
+		for i in arreglo
+			p #{arreglo}
+			p #{band}
+			- band = !band
+			if band
+				p.
+					Hola haz click en #[a(href="codigofacilito.com") este link] #{arreglo[i]}
+			else
+				p.
+					Bruja #{arreglo[i]}
+			
